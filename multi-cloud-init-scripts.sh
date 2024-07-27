@@ -153,18 +153,19 @@ create_template 9071 "temp-arch-latest" "Arch-Linux-x86_64-cloudimg.qcow2"
 ## Kali Linux 
 # Kali Linux Generic Cloud Image for x64
 wget "https://kali.download/cloud-images/kali-2024.2/kali-linux-2024.2-cloud-genericcloud-amd64.tar.xz"
-xz -d -v kali-linux-2024.2-cloud-genericcloud-amd64.tar.xz
+tar -xvf kali-linux-2024.2-cloud-genericcloud-amd64.tar.xz
 create_template 9081 "temp-kali-genericcloud" "kali-linux-2024.2-cloud-genericcloud-amd64"
 # Kali Linux latest x64
 wget "https://cdimage.kali.org/kali-2024.2/kali-linux-2024.2-qemu-amd64.7z"
-xz -d -v kali-linux-2024.2-qemu-amd64.7z
+7z x kali-linux-2024.2-qemu-amd64.7z
 create_template 9082 "temp-kali-x64" "kali-linux-2024.2-qemu-amd64"
 # Kali Linux weekly x64
 wget "https://cdimage.kali.org/kali-weekly/kali-linux-2024-W30-qemu-amd64.7z"
-xz -d -v kali-linux-2024-W30-qemu-amd64.7z
+7z x kali-linux-2024-W30-qemu-amd64.7z
 create_template 9083 "temp-kali-x64-weekly" "kali-linux-2024-W30-qemu-amd64"
 # Kali Linux latest x32
 wget "https://cdimage.kali.org/kali-2024.2/kali-linux-2024.2-qemu-i386.7z"
+7z x kali-linux-2024.2-qemu-i386.7z
 create_template 9084 "temp-kali-x32bit" "kali-linux-2024.2-qemu-i386"
 
 ## gentoo linux
