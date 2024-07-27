@@ -166,4 +166,11 @@ create_template 977 "temp-plesk-ubuntu-22" "plesk-ubuntu-22-latest.qcow2"
 wget "https://autoinstall.plesk.com/images/plesk-ubuntu-latest.qcow2"
 create_template 978 "temp-plesk-ubuntu" "plesk-ubuntu-latest.qcow2"
 
+## whonix
+# whonix latest
+wget "https://download.whonix.org/libvirt/17.2.0.1/Whonix-Xfce-17.2.0.1.Intel_AMD64.qcow2.libvirt.xz"
+xz -d -v Whonix-Xfce-17.2.0.1.Intel_AMD64.qcow2.libvirt.xz
+create_template 980 "temp-whonix" "Whonix-Xfce-17.2.0.1.Intel_AMD64.qcow2"
+
+
 
