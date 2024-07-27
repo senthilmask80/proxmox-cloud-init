@@ -262,6 +262,10 @@ create_template 9533 "dragonflybsd-6.4.0-ufs-2023-04-23.qcow2"
 wget "https://object-storage.public.mtl1.vexxhost.net/swift/v1/1dbafeefbd4f4c80864414a441e72dd2/bsd-cloud-image.org/images/dragonflybsd/6.4.0/2023-04-23/hammer2/dragonflybsd-6.4.0-hammer2-2023-04-23.qcow2"
 create_template 9534 "dragonflybsd-6.4.0-hammer2-2023-04-23.qcow2"
 
+## Collection of Windows prebuilt 
+## Download Windows Server 2012 R2 Standard Evaluation for OpenStack
+https://cloudbase.it/euladownload.php?h=kvm/
+
 ## whonix
 # whonix latest
 wget "https://download.whonix.org/libvirt/17.2.0.1/Whonix-Xfce-17.2.0.1.Intel_AMD64.qcow2.libvirt.xz"
@@ -316,8 +320,13 @@ create_template 9625 "temp-HAOS" "haos_ova-12.4.qcow2"
 
 ## Cirros
 ## CirrOS is a minimal Linux distribution that was designed for use as a test image on clouds such as OpenStack Compute.
-wget http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img
-qemu-img convert -f qcow2 -O raw cirros-0.3.4-x86_64-disk.img cirros-0.3.4-x86_64-disk.raw
-create_template 9626 "temp-cirros" "cirros-0.3.4-x86_64-disk.raw"
+wget https://download.cirros-cloud.net/0.6.2/cirros-0.6.2-x86_64-disk.img
+qemu-img convert -f qcow2 -O raw ccirros-0.6.2-x86_64-disk.img cirros-0.6.2-x86_64-disk.raw
+create_template 9626 "temp-cirros" "cirros-0.6.2-x86_64-disk.raw"
+
+## Zabbix Appliance
+wget https://cdn.zabbix.com/zabbix/appliances/stable/7.0/7.0.1/zabbix_appliance-7.0.1-qcow2.tar.gz
+xz -d -v zabbix_appliance-7.0.1-qcow2.tar.gz
+create_template 9627 "temp-zabbix" "zabbix_appliance-7.0.1-qcow2"
 
 
