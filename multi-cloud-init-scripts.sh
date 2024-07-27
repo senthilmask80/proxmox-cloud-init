@@ -137,4 +137,33 @@ create_template 963 "temp-centos-8" "CentOS-8-GenericCloud-8.4.2105-20210603.0.x
 wget "https://cloud.centos.org/centos/9-stream/x86_64/images/CentOS-Stream-GenericCloud-x86_64-9-latest.x86_64.qcow2"
 create_template 964 "temp-centos-9-stream" "CentOS-Stream-GenericCloud-x86_64-9-latest.x86_64.qcow2"
 
+## Plesk
+# Plesk almalinux 9.18
+wget "https://autoinstall.plesk.com/images/plesk-almalinux-9-18.0.62.qcow2"
+create_template 970 "temp-plesk-alma-918" "plesk-almalinux-9-18.0.62.qcow2"
+# Plesk almalinux 9 latest
+wget "https://autoinstall.plesk.com/images/plesk-almalinux-9-latest.qcow2"
+create_template 971 "temp-plesk-alma-9" "plesk-almalinux-9-latest.qcow2"
+# Plesk almalinux latest
+wget "https://autoinstall.plesk.com/images/plesk-almalinux-latest.qcow2"
+create_template 972 "temp-plesk-alma" "plesk-almalinux-latest.qcow2"
+# Plesk centos 7.18
+wget "https://autoinstall.plesk.com/images/plesk-centos-7-18.0.54.qcow2"
+create_template 973 "temp-plesk-centos-718" "plesk-centos-7-18.0.54.qcow2"
+# Plesk centos 7 latest
+wget "https://autoinstall.plesk.com/images/plesk-centos-7-latest.qcow2"
+create_template 974 "temp-plesk-centos-7" "plesk-centos-7-latest.qcow2"
+# Plesk centos latest
+wget "https://autoinstall.plesk.com/images/plesk-centos-latest.qcow2"
+create_template 975 "temp-plesk-centos" "plesk-centos-latest.qcow2"
+# Plesk ubuntu 22-18
+wget "https://autoinstall.plesk.com/images/plesk-ubuntu-22-18.0.62.qcow2"
+create_template 976 "temp-plesk-ubuntu-22-18" "plesk-ubuntu-22-18.0.62.qcow2"
+# Plesk ubuntu 22 latest
+wget "https://autoinstall.plesk.com/images/plesk-ubuntu-22-latest.qcow2"
+create_template 977 "temp-plesk-ubuntu-22" "plesk-ubuntu-22-latest.qcow2"
+# Plesk ubuntu latest
+wget "https://autoinstall.plesk.com/images/plesk-ubuntu-latest.qcow2"
+create_template 978 "temp-plesk-ubuntu" "plesk-ubuntu-latest.qcow2"
+
 
