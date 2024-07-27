@@ -99,6 +99,10 @@ create_template 9021 "temp-fedora-37" "Fedora-Cloud-Base-37-1.7.x86_64.raw"
 wget "https://download.fedoraproject.org/pub/fedora/linux/releases/38/Cloud/x86_64/images/Fedora-Cloud-Base-38-1.6.x86_64.raw.xz"
 xz -d -v Fedora-Cloud-Base-38-1.6.x86_64.raw.xz
 create_template 9022 "temp-fedora-38" "Fedora-Cloud-Base-38-1.6.x86_64.raw"
+## Fedora 40
+wget "https://download.fedoraproject.org/pub/fedora/linux/releases/40/Cloud/x86_64/images/Fedora-Cloud-Base-Generic.x86_64-40-1.14.qcow2"
+xz -d -v Fedora-Cloud-Base-Generic.x86_64-40-1.14.qcow2
+create_template 9024 "temp-fedora-40" "Fedora-Cloud-Base-Generic.x86_64-40-1.14.qcow2"
 
 ## Rocky Linux
 #Rocky 8 latest
