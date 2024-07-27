@@ -314,6 +314,10 @@ wget "https://github.com/home-assistant/operating-system/releases/download/12.4/
 xz -d -v haos_ova-12.4.qcow2.xz
 create_template 9625 "temp-HAOS" "haos_ova-12.4.qcow2"
 
-
+## Cirros
+## CirrOS is a minimal Linux distribution that was designed for use as a test image on clouds such as OpenStack Compute.
+wget http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img
+qemu-img convert -f qcow2 -O raw cirros-0.3.4-x86_64-disk.img cirros-0.3.4-x86_64-disk.raw
+create_template 9626 "temp-cirros" "cirros-0.3.4-x86_64-disk.raw"
 
 
