@@ -300,5 +300,12 @@ create_template 9621 "temp-apache-cloudstack" "systemvmtemplate-4.15.0-kvm.qcow2
 wget "https://download.opensuse.org/repositories/OBS:/Server:/2.10/images/obs-server.x86_64-qcow2.qcow2"
 create_template 9624 "temp-obs-latest" "obs-server.x86_64-qcow2.qcow2"
 
+## Home Assistant OS 
+## HAOS 12.4
+wget "https://github.com/home-assistant/operating-system/releases/download/12.4/haos_ova-12.4.qcow2.xz"
+xz -d -v haos_ova-12.4.qcow2.xz
+create_template 9625 "temp-HAOS" "haos_ova-12.4.qcow2"
+
+
 
 
