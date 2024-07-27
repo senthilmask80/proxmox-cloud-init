@@ -289,10 +289,16 @@ create_template 9618 "temp-plesk-ubuntu-22" "plesk-ubuntu-22-latest.qcow2"
 wget "https://autoinstall.plesk.com/images/plesk-ubuntu-latest.qcow2"
 create_template 9619 "temp-plesk-ubuntu" "plesk-ubuntu-latest.qcow2"
 
-# apache cloudstack
+## apache cloudstack
 # apache cloudstack 4.15
 wget "http://download.cloudstack.org/systemvm/4.15/systemvmtemplate-4.15.0-kvm.qcow2.bz2"
 xz -d -v systemvmtemplate-4.15.0-kvm.qcow2.bz2
 create_template 9621 "temp-apache-cloudstack" "systemvmtemplate-4.15.0-kvm.qcow2"
+
+## Open Build Service
+# openbuildservice latest
+wget "https://download.opensuse.org/repositories/OBS:/Server:/2.10/images/obs-server.x86_64-qcow2.qcow2"
+create_template 9624 "temp-obs-latest" "obs-server.x86_64-qcow2.qcow2"
+
 
 
