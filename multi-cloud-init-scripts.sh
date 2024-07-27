@@ -172,5 +172,25 @@ wget "https://download.whonix.org/libvirt/17.2.0.1/Whonix-Xfce-17.2.0.1.Intel_AM
 xz -d -v Whonix-Xfce-17.2.0.1.Intel_AMD64.qcow2.libvirt.xz
 create_template 980 "temp-whonix" "Whonix-Xfce-17.2.0.1.Intel_AMD64.qcow2"
 
+## Kali Linux 
+# Kali Linux Generic Cloud Image for x64
+wget "https://kali.download/cloud-images/kali-2024.2/kali-linux-2024.2-cloud-genericcloud-amd64.tar.xz"
+xz -d -v kali-linux-2024.2-cloud-genericcloud-amd64.tar.xz
+create_template 990 "temp-kali-genericcloud" "kali-linux-2024.2-cloud-genericcloud-amd64"
+# Kali Linux latest x64
+wget "https://cdimage.kali.org/kali-2024.2/kali-linux-2024.2-qemu-amd64.7z"
+xz -d -v kali-linux-2024.2-qemu-amd64.7z
+create_template 991 "temp-kali-x64" "kali-linux-2024.2-qemu-amd64"
+# Kali Linux weekly x64
+wget "https://cdimage.kali.org/kali-weekly/kali-linux-2024-W30-qemu-amd64.7z"
+xz -d -v kali-linux-2024-W30-qemu-amd64.7z
+create_template 992 "temp-kali-x64-weekly" "kali-linux-2024-W30-qemu-amd64"
+# Kali Linux latest x32
+wget "https://cdimage.kali.org/kali-2024.2/kali-linux-2024.2-qemu-i386.7z"
+create_template 993 "temp-kali-x32bit" "kali-linux-2024.2-qemu-i386"
 
+# arch Linux
+# arch Linux latest
+wget "https://geo.mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-cloudimg.qcow2"
+create_template 995 "temp-arch-latest" "Arch-Linux-x86_64-cloudimg.qcow2"
 
