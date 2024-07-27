@@ -166,6 +166,12 @@ wget "https://cdimage.kali.org/kali-2024.2/kali-linux-2024.2-qemu-i386.7z"
 7z x kali-linux-2024.2-qemu-i386.7z
 create_template 9084 "temp-kali-x32bit" "kali-linux-2024.2-qemu-i386"
 
+## BlackArch Linux
+wget "https://ftp.halifax.rwth-aachen.de/blackarch/ova/blackarch-linux-2023.04.01.ova"
+tar -xvf blackarch-linux-2023.04.01.ova
+qemu-img convert -O qcow2 blackarch-linux-2023.04.01.vmdk blackarch-linux-2023.04.01.img
+create_template 9086 "temp-blackarch" "blackarch-linux-2023.04.01.img"
+
 ## gentoo linux
 wget "https://distfiles.gentoo.org/experimental/amd64/openstack/gentoo-openstack-amd64-default-latest.qcow2"
 create_template 9091 "temp-gentoo" "gentoo-openstack-amd64-default-latest.qcow2"
