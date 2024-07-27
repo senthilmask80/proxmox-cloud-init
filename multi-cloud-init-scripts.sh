@@ -101,11 +101,9 @@ xz -d -v Fedora-Cloud-Base-38-1.6.x86_64.raw.xz
 create_template 9022 "temp-fedora-38" "Fedora-Cloud-Base-38-1.6.x86_64.raw"
 ## Fedora 39
 wget "https://mirrors.tuna.tsinghua.edu.cn/fedora/releases/39/Cloud/x86_64/images/Fedora-Cloud-Base-39-1.5.x86_64.qcow2"
-xz -d -v Fedora-Cloud-Base-39-1.5.x86_64.qcow2
 create_template 9023 "temp-fedora-39" "Fedora-Cloud-Base-39-1.5.x86_64.qcow2"
 ## Fedora 40
 wget "https://download.fedoraproject.org/pub/fedora/linux/releases/40/Cloud/x86_64/images/Fedora-Cloud-Base-Generic.x86_64-40-1.14.qcow2"
-xz -d -v Fedora-Cloud-Base-Generic.x86_64-40-1.14.qcow2
 create_template 9024 "temp-fedora-40" "Fedora-Cloud-Base-Generic.x86_64-40-1.14.qcow2"
 
 ## Rocky Linux
@@ -305,7 +303,7 @@ create_template 9619 "temp-plesk-ubuntu" "plesk-ubuntu-latest.qcow2"
 ## apache cloudstack
 # apache cloudstack 4.15
 wget "http://download.cloudstack.org/systemvm/4.15/systemvmtemplate-4.15.0-kvm.qcow2.bz2"
-xz -d -v systemvmtemplate-4.15.0-kvm.qcow2.bz2
+bzip2 -d systemvmtemplate-4.15.0-kvm.qcow2.bz2
 create_template 9621 "temp-apache-cloudstack" "systemvmtemplate-4.15.0-kvm.qcow2"
 
 ## Open Build Service
@@ -327,7 +325,7 @@ create_template 9626 "temp-cirros" "cirros-0.6.2-x86_64-disk.raw"
 
 ## Zabbix Appliance
 wget "https://cdn.zabbix.com/zabbix/appliances/stable/7.0/7.0.1/zabbix_appliance-7.0.1-qcow2.tar.gz"
-xz -d -v zabbix_appliance-7.0.1-qcow2.tar.gz
+tar -xvf zabbix_appliance-7.0.1-qcow2.tar.gz
 create_template 9627 "temp-zabbix" "zabbix_appliance-7.0.1-qcow2"
 
 ## NethServer 8 provides an image built upon the stable foundation Rocky Linux 9
