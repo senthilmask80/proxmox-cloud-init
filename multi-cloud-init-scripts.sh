@@ -194,3 +194,10 @@ create_template 993 "temp-kali-x32bit" "kali-linux-2024.2-qemu-i386"
 wget "https://geo.mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-cloudimg.qcow2"
 create_template 995 "temp-arch-latest" "Arch-Linux-x86_64-cloudimg.qcow2"
 
+# apache cloudstack
+# apache cloudstack 4.15
+wget "http://download.cloudstack.org/systemvm/4.15/systemvmtemplate-4.15.0-kvm.qcow2.bz2"
+xz -d -v systemvmtemplate-4.15.0-kvm.qcow2.bz2
+create_template 997 "temp-apache-cloudstack" "systemvmtemplate-4.15.0-kvm.qcow2"
+
+
