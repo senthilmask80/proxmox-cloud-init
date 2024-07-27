@@ -163,6 +163,51 @@ create_template 9084 "temp-kali-x32bit" "kali-linux-2024.2-qemu-i386"
 wget "https://distfiles.gentoo.org/experimental/amd64/openstack/gentoo-openstack-amd64-default-latest.qcow2"
 create_template 9091 "temp-gentoo" "gentoo-openstack-amd64-default-latest.qcow2"
 
+##  CloudLinux
+# CloudLinux 9.4 x86_64 QEMU/KVM cloud image (build 20240628)
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-9.4-x86_64-openstack-20240628.qcow2"
+create_template 9101 "temp-cloudlinux-94" "cloudlinux-9.4-x86_64-openstack-20240628.qcow2"
+#  CloudLinux 8.10 x86_64 QEMU/KVM cloud image (build 20240628)
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-8.10-x86_64-openstack-20240628.qcow2"
+create_template 9102 "temp-cloudlinux-810" "cloudlinux-8.10-x86_64-openstack-20240628.qcow2"
+# CloudLinux 9.4 x86_64 QEMU/KVM cloud image with cPanel v120 + ALT-PHP, MySQL Governor and CageFS (build 20240712) 
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-9.4-x86_64-cpanel-openstack-20240712.qcow2"
+create_template 9103 "temp-cloudlinux-94-cpanel" "cloudlinux-9.4-x86_64-cpanel-openstack-20240712.qcow2"
+# CloudLinux 8.10 x86_64 QEMU/KVM cloud image with cPanel v120 + ALT-PHP, MySQL Governor and CageFS (build 20240712)
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-8.10-x86_64-cpanel-openstack-20240712.qcow2"
+create_template 9104 "temp-cloudlinux-810-cpanel" "cloudlinux-8.10-x86_64-cpanel-openstack-20240712.qcow2"
+# CloudLinux solo 8.8 x86_64 QEMU/KVM cloud image (build 20230620)
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-solo-8.8-x86_64-openstack-20230620.qcow2"
+create_template 9105 "temp-cloudlinux-88-solo" "cloudlinux-solo-8.8-x86_64-openstack-20230620.qcow2"
+# CloudLinux 7.9 x86_64 QEMU/KVM cloud image (build 20230616)
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-7.9-x86_64-openstack-20230616.qcow2"
+create_template 9106 "temp-cloudlinux-79" "cloudlinux-7.9-x86_64-openstack-20230616.qcow2"
+# CloudLinux solo 8.8 x86_64 QEMU/KVM cloud image with cPanel 11.112.0.3 + ALT-PHP, MySQL Governor and CageFS (build 20230622) 
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-solo-8.8-x86_64-cpanel-openstack-20230622.qcow2"
+create_template 9107 "temp-cloudlinux-88-cpanel" "cloudlinux-solo-8.8-x86_64-cpanel-openstack-20230622.qcow2"
+# CloudLinux 7.9 x86_64 QEMU/KVM cloud image with cPanel 11.110.0.7 + ALT-PHP, MySQL Governor and CageFS (build 20230621) 
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-7.9-x86_64-cpanel-openstack-20230621.qcow2"
+create_template 9108 "temp-cloudlinux-79-cpanel" "cloudlinux-7.9-x86_64-cpanel-openstack-20230621.qcow2"
+#  CloudLinux 8.8 x86_64 QEMU/KVM cloud image with Plesk 18.0.53 (build 20230626) 
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-8.8-x86_64-plesk-openstack-20230626.qcow2"
+create_template 9109 "temp-cloudlinux-88-plesk" "cloudlinux-8.8-x86_64-plesk-openstack-20230626.qcow2"
+# CloudLinux 8.8 x86_64 QEMU/KVM cloud image with DirectAdmin 1.649 + ALT-PHP, MySQL Governor and CageFS (build 20230622) 
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-8.8-x86_64-directadmin-openstack-20230622.qcow2"
+create_template 9110 "temp-cloudlinux-88-directadmin" "cloudlinux-8.8-x86_64-directadmin-openstack-20230622.qcow2"
+# CloudLinux 7.9 x86_64 QEMU/KVM cloud image with Plesk 18.0.53 (build 20230626) 
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-7.9-x86_64-plesk-openstack-20230626.qcow2"
+create_template 9111 "temp-cloudlinux-79-plesk" "cloudlinux-7.9-x86_64-plesk-openstack-20230626.qcow2"
+# CloudLinux 6.10 x86_64 QEMU/KVM cloud image (build 20220412) [DEPRECATED] 
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-6.10-x86_64-openstack-20220412.qcow2"
+create_template 9112 "temp-cloudlinux-610" "cloudlinux-6.10-x86_64-openstack-20220412.qcow2"
+# CloudLinux 6.10 x86_64 QEMU/KVM cloud image with cPanel 11.102.0.10 + ALT-PHP, MySQL Governor and CageFS (build 20220414) [DEPRECATED] 
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-6.10-x86_64-cpanel-openstack-20220414.qcow2"
+create_template 9113 "temp-cloudlinux-610-cpanel" "cloudlinux-6.10-x86_64-cpanel-openstack-20220414.qcow2"
+#  CloudLinux 6.10 x86_64 QEMU/KVM cloud image with Plesk 17.8.11 (build 20220412) [DEPRECATED] 
+wget "https://download.cloudlinux.com/cloudlinux/images/cloudlinux-6.10-x86_64-plesk-openstack-20220412.qcow2"
+create_template 9114 "temp-cloudlinux-610-plesk" "cloudlinux-6.10-x86_64-plesk-openstack-20220412.qcow2"
+
+
 ## A collection of prebuilt BSD cloud images
 ## These unofficial images are tested on OpenStack and NoCloud (with Virt-Lightning).
 ##  They come with Cloud-init, and so they should support all the main Cloud providers.
@@ -170,84 +215,84 @@ create_template 9091 "temp-gentoo" "gentoo-openstack-amd64-default-latest.qcow2"
 ## freebsd
 # freebsd 13.3 ufs file system
 wget "https://object-storage.public.mtl1.vexxhost.net/swift/v1/1dbafeefbd4f4c80864414a441e72dd2/bsd-cloud-image.org/images/freebsd/13.3/2024-05-06/ufs/freebsd-13.3-ufs-2024-05-06.qcow2"
-create_template 9101 "freebsd-13.3-ufs-2024-05-06.qcow2"
+create_template 9501 "freebsd-13.3-ufs-2024-05-06.qcow2"
 # freebsd 13.3 zfs file system
 wget "https://object-storage.public.mtl1.vexxhost.net/swift/v1/1dbafeefbd4f4c80864414a441e72dd2/bsd-cloud-image.org/images/freebsd/13.3/2024-05-06/zfs/freebsd-13.3-zfs-2024-05-06.qcow2"
-create_template 9102 "freebsd-13.3-zfs-2024-05-06.qcow2"
+create_template 9502 "freebsd-13.3-zfs-2024-05-06.qcow2"
 # freebsd 14.0 ufs file system
 wget "https://object-storage.public.mtl1.vexxhost.net/swift/v1/1dbafeefbd4f4c80864414a441e72dd2/bsd-cloud-image.org/images/freebsd/14.0/2024-05-04/ufs/freebsd-14.0-ufs-2024-05-04.qcow2"
-create_template 9103 "freebsd-14.0-ufs-2024-05-04.qcow2"
+create_template 9503 "freebsd-14.0-ufs-2024-05-04.qcow2"
 # freebsd 14.0 zfs file system
 wget "https://object-storage.public.mtl1.vexxhost.net/swift/v1/1dbafeefbd4f4c80864414a441e72dd2/bsd-cloud-image.org/images/freebsd/14.0/2024-05-06/zfs/freebsd-14.0-zfs-2024-05-06.qcow2"
-create_template 9104 "freebsd-14.0-zfs-2024-05-06.qcow2"
+create_template 9504 "freebsd-14.0-zfs-2024-05-06.qcow2"
 
 # NetBSD 
 # NetBSD 8.2 
 wget "https://object-storage.public.mtl1.vexxhost.net/swift/v1/1dbafeefbd4f4c80864414a441e72dd2/bsd-cloud-image.org/images/netbsd/8.2/netbsd-8.2.qcow2"
-create_template 9111 "netbsd-8.2.qcow2"
+create_template 9511 "netbsd-8.2.qcow2"
 # NetBSD 9.3
 wget "https://object-storage.public.mtl1.vexxhost.net/swift/v1/1dbafeefbd4f4c80864414a441e72dd2/bsd-cloud-image.org/images/netbsd/9.3/2023-04-23/ufs/netbsd-9.3-2023-04-23.qcow2"
-create_template 9112 "netbsd-9.3-2023-04-23.qcow2"
+create_template 9512 "netbsd-9.3-2023-04-23.qcow2"
 
 # OpenBSD 7.4
 wget "https://github.com/hcartiaux/openbsd-cloud-image/releases/download/v7.4_2024-05-15-16-35/openbsd-min.qcow2"
-create_template 9121 "openbsd-min.qcow2"
+create_template 9521 "openbsd-min.qcow2"
 # OpenBSD 7.5
 wget "https://github.com/hcartiaux/openbsd-cloud-image/releases/download/v7.5_2024-05-13-15-25/openbsd-min.qcow2"
-create_template 9122 "openbsd-min.qcow2"
+create_template 9522 "openbsd-min.qcow2"
 
 # DragonFlyBSD 6.2.2 ufs file system
 wget "https://object-storage.public.mtl1.vexxhost.net/swift/v1/1dbafeefbd4f4c80864414a441e72dd2/bsd-cloud-image.org/images/dragonflybsd/6.2.2/2022-09-06/ufs/dragonflybsd-6.2.2-ufs-2022-09-06.qcow2"
-create_template 9131 "dragonflybsd-6.2.2-ufs-2022-09-06.qcow2"
+create_template 9531 "dragonflybsd-6.2.2-ufs-2022-09-06.qcow2"
 # DragonFlyBSD 6.2.2 Hammer2 file system
 wget "https://object-storage.public.mtl1.vexxhost.net/swift/v1/1dbafeefbd4f4c80864414a441e72dd2/bsd-cloud-image.org/images/dragonflybsd/6.2.2/2022-09-06/hammer2/dragonflybsd-6.2.2-hammer2-2022-09-06.qcow2"
-create_template 9132 "dragonflybsd-6.2.2-hammer2-2022-09-06.qcow2"
+create_template 9532 "dragonflybsd-6.2.2-hammer2-2022-09-06.qcow2"
 # DragonFlyBSD 6.4.0 ufs file system
 wget "https://object-storage.public.mtl1.vexxhost.net/swift/v1/1dbafeefbd4f4c80864414a441e72dd2/bsd-cloud-image.org/images/dragonflybsd/6.4.0/2023-04-23/ufs/dragonflybsd-6.4.0-ufs-2023-04-23.qcow2"
-create_template 9133 "dragonflybsd-6.4.0-ufs-2023-04-23.qcow2"
+create_template 9533 "dragonflybsd-6.4.0-ufs-2023-04-23.qcow2"
 # DragonFlyBSD 6.4.0 hammer2 file system
 wget "https://object-storage.public.mtl1.vexxhost.net/swift/v1/1dbafeefbd4f4c80864414a441e72dd2/bsd-cloud-image.org/images/dragonflybsd/6.4.0/2023-04-23/hammer2/dragonflybsd-6.4.0-hammer2-2023-04-23.qcow2"
-create_template 9134 "dragonflybsd-6.4.0-hammer2-2023-04-23.qcow2"
+create_template 9534 "dragonflybsd-6.4.0-hammer2-2023-04-23.qcow2"
 
 ## whonix
 # whonix latest
 wget "https://download.whonix.org/libvirt/17.2.0.1/Whonix-Xfce-17.2.0.1.Intel_AMD64.qcow2.libvirt.xz"
 xz -d -v Whonix-Xfce-17.2.0.1.Intel_AMD64.qcow2.libvirt.xz
-create_template 8001 "temp-whonix" "Whonix-Xfce-17.2.0.1.Intel_AMD64.qcow2"
+create_template 9601 "temp-whonix" "Whonix-Xfce-17.2.0.1.Intel_AMD64.qcow2"
 
 ## Plesk
 # Plesk almalinux 9.18
 wget "https://autoinstall.plesk.com/images/plesk-almalinux-9-18.0.62.qcow2"
-create_template 8011 "temp-plesk-alma-918" "plesk-almalinux-9-18.0.62.qcow2"
+create_template 9611 "temp-plesk-alma-918" "plesk-almalinux-9-18.0.62.qcow2"
 # Plesk almalinux 9 latest
 wget "https://autoinstall.plesk.com/images/plesk-almalinux-9-latest.qcow2"
-create_template 8012 "temp-plesk-alma-9" "plesk-almalinux-9-latest.qcow2"
+create_template 9612 "temp-plesk-alma-9" "plesk-almalinux-9-latest.qcow2"
 # Plesk almalinux latest
 wget "https://autoinstall.plesk.com/images/plesk-almalinux-latest.qcow2"
-create_template 8013 "temp-plesk-alma" "plesk-almalinux-latest.qcow2"
+create_template 9613 "temp-plesk-alma" "plesk-almalinux-latest.qcow2"
 # Plesk centos 7.18
 wget "https://autoinstall.plesk.com/images/plesk-centos-7-18.0.54.qcow2"
-create_template 8014 "temp-plesk-centos-718" "plesk-centos-7-18.0.54.qcow2"
+create_template 9614 "temp-plesk-centos-718" "plesk-centos-7-18.0.54.qcow2"
 # Plesk centos 7 latest
 wget "https://autoinstall.plesk.com/images/plesk-centos-7-latest.qcow2"
-create_template 8015 "temp-plesk-centos-7" "plesk-centos-7-latest.qcow2"
+create_template 9615 "temp-plesk-centos-7" "plesk-centos-7-latest.qcow2"
 # Plesk centos latest
 wget "https://autoinstall.plesk.com/images/plesk-centos-latest.qcow2"
-create_template 8016 "temp-plesk-centos" "plesk-centos-latest.qcow2"
+create_template 9616 "temp-plesk-centos" "plesk-centos-latest.qcow2"
 # Plesk ubuntu 22-18
 wget "https://autoinstall.plesk.com/images/plesk-ubuntu-22-18.0.62.qcow2"
-create_template 8017 "temp-plesk-ubuntu-22-18" "plesk-ubuntu-22-18.0.62.qcow2"
+create_template 9617 "temp-plesk-ubuntu-22-18" "plesk-ubuntu-22-18.0.62.qcow2"
 # Plesk ubuntu 22 latest
 wget "https://autoinstall.plesk.com/images/plesk-ubuntu-22-latest.qcow2"
-create_template 8018 "temp-plesk-ubuntu-22" "plesk-ubuntu-22-latest.qcow2"
+create_template 9618 "temp-plesk-ubuntu-22" "plesk-ubuntu-22-latest.qcow2"
 # Plesk ubuntu latest
 wget "https://autoinstall.plesk.com/images/plesk-ubuntu-latest.qcow2"
-create_template 8019 "temp-plesk-ubuntu" "plesk-ubuntu-latest.qcow2"
+create_template 9619 "temp-plesk-ubuntu" "plesk-ubuntu-latest.qcow2"
 
 # apache cloudstack
 # apache cloudstack 4.15
 wget "http://download.cloudstack.org/systemvm/4.15/systemvmtemplate-4.15.0-kvm.qcow2.bz2"
 xz -d -v systemvmtemplate-4.15.0-kvm.qcow2.bz2
-create_template 8021 "temp-apache-cloudstack" "systemvmtemplate-4.15.0-kvm.qcow2"
+create_template 9621 "temp-apache-cloudstack" "systemvmtemplate-4.15.0-kvm.qcow2"
 
 
