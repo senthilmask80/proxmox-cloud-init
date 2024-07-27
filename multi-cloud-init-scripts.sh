@@ -333,3 +333,8 @@ create_template 9627 "temp-zabbix" "zabbix_appliance-7.0.1-qcow2"
 wget "https://distfeed.nethserver.org/ns8-images/ns8-rocky-linux-9-ns8-stable.qcow2"
 create_template 9628 "temp-NethServer" "ns8-rocky-linux-9-ns8-stable.qcow2"
 
+## Sophos Firewall
+wget "https://download.sophos.com/network/SophosFirewall/installers/VI-20.0.1_MR-1.KVM-342.zip"
+unzip VI-20.0.1_MR-1.KVM-342.zip
+create_template 9631 "temp-sophos" "VI-20.0.1_MR-1.KVM-342.qcow2"
+
