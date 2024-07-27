@@ -159,6 +159,10 @@ create_template 9083 "temp-kali-x64-weekly" "kali-linux-2024-W30-qemu-amd64"
 wget "https://cdimage.kali.org/kali-2024.2/kali-linux-2024.2-qemu-i386.7z"
 create_template 9084 "temp-kali-x32bit" "kali-linux-2024.2-qemu-i386"
 
+## gentoo linux
+wget "https://distfiles.gentoo.org/experimental/amd64/openstack/gentoo-openstack-amd64-default-latest.qcow2"
+create_template 9091 "temp-gentoo" "gentoo-openstack-amd64-default-latest.qcow2"
+
 ## A collection of prebuilt BSD cloud images
 ## These unofficial images are tested on OpenStack and NoCloud (with Virt-Lightning).
 ##  They come with Cloud-init, and so they should support all the main Cloud providers.
